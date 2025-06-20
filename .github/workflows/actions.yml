@@ -1,5 +1,8 @@
 name: Build and Test
-on: [push]
+on:
+  push:
+  workflow_dispatch: # This line adds the manual trigger
+
 jobs:
   Build-And-Test:
     runs-on: ubuntu-latest
